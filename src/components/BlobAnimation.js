@@ -17,7 +17,7 @@ const BlobAnimation = () => {
           width="100%"
           height="100%"
           clipPath="url(#shape)"
-          href="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80"
+          href="https://cdn.pentas.io/next-s3-uploads/c34cc4cd-87b0-44cf-8a51-405b4b90e194/solah6.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
           preserveAspectRatio="none"
         ></image>{" "}
         <defs>
