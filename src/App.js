@@ -44,7 +44,7 @@ function App() {
           </div>
 
             {/* Icons */}
-          <div className="flex justify-center gap-[1.5rem] lg:gap-x-[2rem] ml-[2rem] my-[4.5rem] text-white">
+          <div className="flex justify-center gap-[1.5rem] lg:gap-x-[2rem] lg:ml-[4rem] my-[4.5rem] text-white">
             <SiHtml5 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-orange-700 to-orange-500 drop-shadow-md"/>
             <SiCss3 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-500 drop-shadow-md"/>
             <SiJavascript className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-yellow-500 to-yellow-300 drop-shadow-md"/>
