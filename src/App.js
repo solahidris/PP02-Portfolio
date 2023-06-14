@@ -23,11 +23,11 @@ function App() {
           </div>
             {/* Title and Intro */}
           <div className="lg:ml-10 flex flex-col justify-center text-white font-mono">
-            <p className="text-[2.2rem] lg:text-[3.6rem] lg:text-left text-center font-bold">Front-End <a href="#" class="text-sky-400 pointer-events-none">React</a> Developer 👋🏻</p>
+            <p className="text-[2.2rem] lg:text-[3.6rem] lg:text-left text-center font-bold">Front-End <a href="#" class="text-sky-300 pointer-events-none">React</a> Developer 👋🏻</p>
             <p className="text-[0.9rem] lg:mr-[23%] lg:text-left text-center pt-8 pb-10">Hi, I'm Sol. A passionate self-taught Front-end React Developer based in Kuala Lumpur, Malaysia. 📍</p>
             <div className="flex gap-x-4 justify-center lg:justify-start">
-              <a target="_blank" href="https://github.com/solahidris"><SiGithub className="w-[2rem] h-[2rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-yellow-400"/></a>
-              <a target="_blank" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[2rem] h-[2rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-blue-500"/></a>
+              <a target="_blank" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-yellow-400"/></a>
+              <a target="_blank" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-blue-500"/></a>
             </div>
           </div>  
         </div>
@@ -44,12 +44,12 @@ function App() {
           </div>
 
             {/* Icons */}
-          <div className="flex my-[4.5rem] justify-center gap-[1.5rem] lg:gap-x-[2rem] ml-[2rem] text-white">
-            <SiHtml5 className="w-[4rem] h-[4rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-orange-700 to-orange-500 drop-shadow-md"/>
-            <SiCss3 className="w-[4rem] h-[4rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-500 drop-shadow-md"/>
-            <SiJavascript className="w-[4rem] h-[4rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-yellow-500 to-yellow-300 drop-shadow-md"/>
-            <SiReact className="w-[4rem] h-[4rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-cyan-700 to-cyan-500 drop-shadow-md"/>
-            <SiTailwindcss className="w-[4rem] h-[4rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-sky-500 to-sky-300 drop-shadow-md"/>
+          <div className="flex justify-center gap-[1.5rem] lg:gap-x-[2rem] ml-[2rem] my-[4.5rem] text-white">
+            <SiHtml5 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-orange-700 to-orange-500 drop-shadow-md"/>
+            <SiCss3 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-500 drop-shadow-md"/>
+            <SiJavascript className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-yellow-500 to-yellow-300 drop-shadow-md"/>
+            <SiReact className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-cyan-700 to-cyan-500 drop-shadow-md"/>
+            <SiTailwindcss className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-sky-500 to-sky-300 drop-shadow-md"/>
           </div>
 
         </div>
