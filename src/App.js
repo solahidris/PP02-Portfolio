@@ -60,15 +60,15 @@ function App() {
       <div className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700">
         <div className="flex flex-col lg:flex-row-reverse">
             {/* Macbook Pic */}
-          <img src={macbookpic} className="mx-[2rem] lg:mx-[0rem] rounded-2xl lg:w-[30%] lg:h-[30%] lg:self-center" alt="macpic" />
+          <img src={macbookpic} className="mx-[2rem] lg:mx-[1rem] rounded-2xl aspect-square lg:w-[30%] lg:h-[30%] lg:self-center" alt="macpic" />
           <div className="lg:py-[2.5rem]">
               {/* Title */}
             <div className="flex justify-center">
               <p className="lg:mt-0 mt-[2.5rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">ABOUT ME</p>
             </div>
               {/* Employment History */}
-            <div className="lg:px-[4rem] bg-slate-800/20 mx-[1.5rem] px-[1.5rem] py-[1rem] mt-[1rem] rounded-xl overflow-y-auto h-[25rem] lg:h-[100%]">
-              <p className="text-justify font-mono font-bold text-[1.5rem] text-white">An ex-<a href="#" class="text-yellow-200 pointer-events-none">Google</a> & <a href="#" class="text-sky-500 pointer-events-none">Facebook</a> Employee that finally becomes a Programmer</p>
+            <div className="lg:px-[4rem] bg-slate-800/20 mx-[2rem] px-[1.5rem] py-[1rem] mt-[2rem] rounded-xl overflow-y-auto h-[25rem] lg:h-[100%]">
+              <p className="text-left font-mono font-bold text-[1.5rem] text-white">An ex-<a href="#" class="text-yellow-200 pointer-events-none">Google</a> & <a href="#" class="text-sky-500 pointer-events-none">Facebook</a> Employee that finally becomes a Programmer</p>
               <p className="text-justify mt-[2rem] font-mono text-[0.8rem] text-gray-100/80 ">As a self-taught Junior Front-End Developer, I now have an arsenal of skills in HTML, CSS, JavaScript, React, Tailwind and still coding & learning daily. I aim to create a meaningful app to ease everyone's lives.</p>
               <p className="text-justify mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Previously, in <a href="#" class="text-yellow-200 pointer-events-none">Google</a>, I was positioned as an <a href="#" class="text-yellow-200 pointer-events-none">App Review Analyst</a> and <a href="#" class="text-yellow-200 pointer-events-none">Social Listening</a> team. Meanwhile, in <a href="#" class="text-sky-500 pointer-events-none">Facebook</a>, I was doing <a href="#" class="text-sky-500 pointer-events-none">Customer Support</a> via Email, Live Chat & Calls. Both FAANG companies definitely taught me a lot about IT and gave me the drive to chase my dream in becoming a programmer.</p>
               <p className="text-justify mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Other than those places, I've worked at <a href="#" class="text-green-500 pointer-events-none">ATOS as a L1 Tech Support</a> supporting the Asia Region. And my interest in coding started during my stay at a local startup called <a href="#" class="text-rose-500 pointer-events-none">WinApp in iOS Development</a> using Swift and XCode.</p>
