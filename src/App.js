@@ -80,10 +80,22 @@ function App() {
         </div>
       </div>
 
+      <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800">
+        <p>Project Section</p>
+      </div>
+
+      <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-slate-700">
+        <p>Contact Section</p>
+      </div>
+
+      <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800">
+        <p>Footer Section</p>
+        <p>Copyright © 2023. All rights are reserved</p>
+      </div>
+
 
 
       <div className="py-[30rem] text-gray-800">
-          
           <p>more space</p>
       </div>
         
