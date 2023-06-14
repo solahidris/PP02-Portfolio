@@ -59,8 +59,8 @@ function App() {
         {/* ABOUT ME SECTION */}
       <div className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700">
         <div className="flex flex-col lg:flex-row-reverse">
-            {/* Macbook Pic */}
-          <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] rounded-2xl aspect-square lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center lg:self-center" alt="macpic" />
+            {/* Macbook Pic lg:mt-[8rem] */}
+          <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5rem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
           <div className="lg:py-[2.5rem]">
               {/* Title */}
             <div className="flex justify-center">
