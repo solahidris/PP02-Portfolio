@@ -2,21 +2,21 @@ import logo from "./logo.svg";
 import "./App.css";
 import BlobAnimation from "./components/BlobAnimation";
 import { SiGithub, SiLinkedin, SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiStackoverflow } from "react-icons/si";
-
+import macbookpic from "./assets/macbookpic.jpg";
 
 function App() {
   return (
     <div className="bg-gray-800 min-h-[100vh]">
 
+        {/* Header Top Menu */}
       <div className="flex justify-between items-center py-7 px-10 lg:px-20 bg-gray-800 drop-shadow-xl">
         <p className="font-mono text-xs text-white">solah.dev</p>
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <p className="font-mono text-lg text-white">Ξ</p> */}
         <button><p className="font-mono text-lg text-white">Ξ</p></button>
       </div>
 
-        {/* Picture + Title + Intro + Tech Stack */}
-      <div className="mx-[2rem]">
+        {/* INTRO SECTION */}
+      <div className="px-[2rem]">
 
         <div className="m-4 flex flex-col lg:flex-row">
             {/* Blob Picture */}
@@ -58,7 +58,32 @@ function App() {
 
       </div>
 
+        {/* ABOUT ME SECTION */}
+      <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-slate-700">
+        <div className="flex flex-col lg:flex-row-reverse">
+            {/* Macbook Pic */}
+          <img src={macbookpic} className="rounded-2xl lg:w-[30%] lg:h-[30%] lg:self-center" alt="macpic" />
+          <div className="lg:py-[2.5rem]">
+              {/* Title */}
+            <div className="flex justify-center">
+              <p className="lg:mt-0 mt-[2.5rem] font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">ABOUT ME</p>
+            </div>
+              {/* Employment History */}
+            <div className="lg:px-[4rem]">
+              <p className="text-center mt-[1rem] font-mono font-bold text-[1.5rem] text-white">An ex-<strong class="underline decoration-yellow-400">Google</strong> & <strong class="underline decoration-blue-500">Facebook</strong> Employee that finally becomes a Programmer</p>
+              <p className="text-center mt-[2rem] font-mono text-[0.8rem] text-gray-100/80 ">As a self-taught Junior Front-End Developer, I now have an arsenal of skills in HTML, CSS, JavaScript, React, Tailwind and still coding & learning daily. I aim to create a meaningful app to ease everyone's lives.</p>
+              <p className="text-center mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Previously, in <strong class="underline decoration-yellow-400">Google</strong>, I was positioned as an <strong class="underline decoration-yellow-400">App Review Analyst</strong> and <strong class="underline decoration-yellow-400">Social Listening</strong> team. Meanwhile, in <strong class="underline decoration-blue-500">Facebook</strong>, I was doing <strong class="underline decoration-blue-500">Customer Support</strong> via Email, Live Chat & Calls. Both FAANG companies definitely taught me a lot about IT and gave me the drive to chase my dream in becoming a programmer.</p>
+              <p className="text-center mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Other than those places, I've worked at <strong class="underline decoration-green-500">ATOS as a L1 Tech Support</strong> supporting the Asia Region. And my interest in coding started during my stay at a local startup called <strong class="underline decoration-orange-500">WinApp in iOS Development</strong> using Swift and XCode.</p>
+              <p className="text-center mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Although graduating with a <strong class="underline decoration-sky-500">Mechanical Engineering Degree</strong> from Wichita State in Kansas USA, I do believe programming is my passion because my love of building. With that being said, please give me a chance to perform and contribute in your company. I truly believe I can make a difference and give a positive impact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
       <div className="py-[30rem] text-gray-800">
+          
           <p>more space</p>
       </div>
         
