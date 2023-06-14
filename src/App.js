@@ -24,7 +24,7 @@ function App() {
             {/* Title and Intro */}
           <div className="lg:ml-10 flex flex-col justify-center text-white font-mono">
             <p className="text-[2.2rem] lg:text-[3.6rem] lg:text-left text-center font-bold">Front-End <a href="#" class="text-sky-300 pointer-events-none">React</a> Developer 👋🏻</p>
-            <p className="text-[0.9rem] lg:mr-[23%] lg:text-left text-center pt-8 pb-10">Hi, I'm Sol. A passionate self-taught Front-end React Developer based in Kuala Lumpur, Malaysia. 📍</p>
+            <p className="text-[0.9rem] lg:mr-[23%] lg:text-left text-justify pt-8 pb-10">Hi, I'm Sol. A passionate self-taught Front-end React Developer based in Kuala Lumpur, Malaysia. 📍</p>
             <div className="flex gap-x-4 justify-center lg:justify-start">
               <a target="_blank" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-yellow-400"/></a>
               <a target="_blank" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-blue-500"/></a>
@@ -57,18 +57,18 @@ function App() {
       </div>
 
         {/* ABOUT ME SECTION */}
-      <div className="px-[4rem] py-[5rem] lg:px-[8rem] bg-slate-700">
+      <div className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700">
         <div className="flex flex-col lg:flex-row-reverse">
             {/* Macbook Pic */}
-          <img src={macbookpic} className="rounded-2xl lg:w-[30%] lg:h-[30%] lg:self-center" alt="macpic" />
+          <img src={macbookpic} className="mx-[2rem] lg:mx-[0rem] rounded-2xl lg:w-[30%] lg:h-[30%] lg:self-center" alt="macpic" />
           <div className="lg:py-[2.5rem]">
               {/* Title */}
             <div className="flex justify-center">
               <p className="lg:mt-0 mt-[2.5rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">ABOUT ME</p>
             </div>
               {/* Employment History */}
-            <div className="lg:px-[4rem]">
-              <p className="text-justify mt-[1.5rem] font-mono font-bold text-[1.5rem] text-white">An ex-<a href="#" class="text-yellow-200 pointer-events-none">Google</a> & <a href="#" class="text-sky-500 pointer-events-none">Facebook</a> Employee that finally becomes a Programmer</p>
+            <div className="lg:px-[4rem] bg-slate-800/20 mx-[1.5rem] px-[1.5rem] py-[1rem] mt-[1rem] rounded-xl overflow-y-auto h-[25rem] lg:h-[100%]">
+              <p className="text-justify font-mono font-bold text-[1.5rem] text-white">An ex-<a href="#" class="text-yellow-200 pointer-events-none">Google</a> & <a href="#" class="text-sky-500 pointer-events-none">Facebook</a> Employee that finally becomes a Programmer</p>
               <p className="text-justify mt-[2rem] font-mono text-[0.8rem] text-gray-100/80 ">As a self-taught Junior Front-End Developer, I now have an arsenal of skills in HTML, CSS, JavaScript, React, Tailwind and still coding & learning daily. I aim to create a meaningful app to ease everyone's lives.</p>
               <p className="text-justify mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Previously, in <a href="#" class="text-yellow-200 pointer-events-none">Google</a>, I was positioned as an <a href="#" class="text-yellow-200 pointer-events-none">App Review Analyst</a> and <a href="#" class="text-yellow-200 pointer-events-none">Social Listening</a> team. Meanwhile, in <a href="#" class="text-sky-500 pointer-events-none">Facebook</a>, I was doing <a href="#" class="text-sky-500 pointer-events-none">Customer Support</a> via Email, Live Chat & Calls. Both FAANG companies definitely taught me a lot about IT and gave me the drive to chase my dream in becoming a programmer.</p>
               <p className="text-justify mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Other than those places, I've worked at <a href="#" class="text-green-500 pointer-events-none">ATOS as a L1 Tech Support</a> supporting the Asia Region. And my interest in coding started during my stay at a local startup called <a href="#" class="text-rose-500 pointer-events-none">WinApp in iOS Development</a> using Swift and XCode.</p>
