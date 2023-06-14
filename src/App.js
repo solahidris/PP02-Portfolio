@@ -26,8 +26,8 @@ function App() {
             <p className="text-[2.2rem] lg:text-[3.6rem] lg:text-left text-center font-bold">Front-End <a href="#" class="text-sky-300 pointer-events-none">React</a> Developer 👋🏻</p>
             <p className="text-[0.9rem] lg:mr-[23%] lg:text-left text-justify pt-8 pb-10">Hi, I'm Sol. A passionate self-taught Front-end React Developer based in Kuala Lumpur, Malaysia. 📍</p>
             <div className="flex gap-x-4 justify-center lg:justify-start">
-              <a target="_blank" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-yellow-400"/></a>
-              <a target="_blank" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-blue-500"/></a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-yellow-400"/></a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-blue-500"/></a>
             </div>
           </div>  
         </div>
@@ -60,7 +60,7 @@ function App() {
       <div className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700">
         <div className="flex flex-col lg:flex-row-reverse">
             {/* Macbook Pic lg:mt-[8rem] */}
-          <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5rem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
+          <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5grem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
           <div className="lg:py-[2.5rem]">
               {/* Title */}
             <div className="flex justify-center">
@@ -80,6 +80,11 @@ function App() {
 
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800">
         <p>Project Section</p>
+        <p>coffee shop</p>
+        <p>weather check app</p>
+        <p>recipe app</p>
+        <p>calculator</p>
+        <p>todolist app</p>
       </div>
 
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-slate-700">
