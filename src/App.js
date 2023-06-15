@@ -96,8 +96,8 @@ function App() {
             <div className="flex text-white">
               <img src={coffeeshop} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.2rem] font-mono font-bold underline underline-offset-8">Coffee Shop</p>
-                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+                <p className="text-[1.3rem] font-mono font-bold underline underline-offset-8">Coffee Shop</p>
+                <p className="text-[0.6rem] font-mono self-center text-justified py-[10%]">A local coffee shop with a reactive menu, navigation, reviews and social links</p>
               </div>
             </div>
           </a>
@@ -106,8 +106,8 @@ function App() {
             <div className="flex text-white">
               <img src={weatherapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.1rem] font-mono font-bold underline underline-offset-8">City Weather</p>
-                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">User can input a city and the app displays the weather via an external API</p>
+                <p className="text-[1.3rem] font-mono font-bold underline underline-offset-8">City Weather</p>
+                <p className="text-[0.6rem] font-mono self-center text-justified py-[10%]">User can input a city and the app displays the weather via an external API</p>
               </div>
             </div>
           </a>
@@ -116,7 +116,7 @@ function App() {
             <div className="flex text-white">
               <img src={recipeapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">Recipe App</p>
+                <p className="text-[1.3rem] font-mono font-bold underline underline-offset-8">Recipe App</p>
                 <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">Type in a food & the dynamic searchbar fetches recipes from an external API</p>
               </div>
             </div>
@@ -126,7 +126,7 @@ function App() {
             <div className="flex text-white">
               <img src={calculatorapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">iCalculator</p>
+                <p className="text-[1.3rem] font-mono font-bold underline underline-offset-8">iCalculator</p>
                 <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">Recreating an iPhone calculator using React useState hook functionality</p>
               </div>
             </div>
@@ -136,8 +136,8 @@ function App() {
             <div className="flex text-white">
               <img src={todoapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">To-Do List</p>
-                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">A personal to-do list app to replace note taking apps for daily reminder tasks</p>
+                <p className="text-[1.3rem] font-mono font-bold underline underline-offset-8">To-Do List</p>
+                <p className="text-[0.6rem] font-mono self-center text-justified py-[10%]">A personal to-do list app to replace note taking apps for daily reminder tasks</p>
               </div>
             </div>
           </a>
