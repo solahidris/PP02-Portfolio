@@ -93,51 +93,51 @@ function App() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1.5rem]">
 
           <a href="https://coffeeandkicks.vercel.app/" target='_blank' className="w-[100%]">
-            <div className="flex text-white">
+            <div className="flex">
               <img src={coffeeshop} alt="" className="rounded-l-xl w-[40%]" />
-              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.1rem] font-mono font-bold underline underline-offset-8">Coffee Shop</p>
-                <p className="text-[0.5rem] font-mono self-center text-justified py-[10%]">A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+              <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 flex flex-col ">
+                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">Coffee Shop</p>
+                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">A local coffee shop with a reactive menu, navigation, reviews and social links</p>
               </div>
             </div>
           </a>
           
           <a href="https://project14-t1-weather-app-react.vercel.app/" target='_blank' className="w-[100%]">
-            <div className="flex text-white">
+            <div className="flex">
               <img src={weatherapp} alt="" className="rounded-l-xl w-[40%]" />
-              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.1rem] font-mono font-bold underline underline-offset-8">City Weather</p>
-                <p className="text-[0.5rem] font-mono self-center text-justified py-[10%]">User can input a city and the app displays the weather via an external API</p>
+              <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">City Weather</p>
+                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">User can input a city and the app displays the weather via an external API</p>
               </div>
             </div>
           </a>
 
           <a href="https://project12-t1-recipe-app-react.vercel.app/" target='_blank' className="w-[100%]">
-            <div className="flex text-white">
+            <div className="flex">
               <img src={recipeapp} alt="" className="rounded-l-xl w-[40%]" />
-              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.1rem] font-mono font-bold underline underline-offset-8">Recipe App</p>
-                <p className="text-[0.5rem] font-mono self-center text-justified py-[10%]">Type in a food & the dynamic searchbar fetches recipes from an external API</p>
+              <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">Recipe App</p>
+                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">Type in a food & the dynamic searchbar fetches recipes from an external API</p>
               </div>
             </div>
           </a>
           
           <a href="https://solah-calculator.vercel.app/" target='_blank' className="w-[100%]">
-            <div className="flex text-white">
+            <div className="flex">
               <img src={calculatorapp} alt="" className="rounded-l-xl w-[40%]" />
-              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.1rem] font-mono font-bold underline underline-offset-8">iCalculator</p>
-                <p className="text-[0.5rem] font-mono self-center text-justified py-[10%]">Recreating an iPhone calculator using React useState hook functionality</p>
+              <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">iCalculator</p>
+                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">Recreating an iPhone calculator using React useState hook functionality</p>
               </div>
             </div>
           </a>
           
           <a href="https://solah-todoapp.vercel.app/" target='_blank' className="w-[100%]">
-            <div className="flex text-white">
+            <div className="flex">
               <img src={todoapp} alt="" className="rounded-l-xl w-[40%]" />
-              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
-                <p className="text-[1.1rem] font-mono font-bold underline underline-offset-8">To-Do List</p>
-                <p className="text-[0.5rem] font-mono self-center text-justified py-[10%]">A personal to-do list app to replace note taking apps for daily reminder tasks</p>
+              <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">To-Do List</p>
+                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">A personal to-do list app to replace note taking apps for daily reminder tasks</p>
               </div>
             </div>
           </a>
