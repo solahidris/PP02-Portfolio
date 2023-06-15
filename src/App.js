@@ -83,64 +83,83 @@ function App() {
         </div>
       </div>
 
-      <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800">
+        {/* PROJECTS SECTION */}
+      <div className="px-[4rem] py-[3rem] lg:px-[8rem] lg:pb-[8rem] bg-gray-800">
 
         <div className="flex justify-center">
-              <p className="lg:mt-0 mt-[2rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">PROJECTS</p>
+              <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">PROJECTS</p>
         </div>
         
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1.5rem]">
 
-          <div className="flex">
-            <img src={coffeeshop} className="w-[40%] rounded-l-xl"/>
-            <div className="bg-red-200 rounded-r-xl">
-              <p>coffee shop-Deployed</p>
-              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+          <a href="https://coffeeandkicks.vercel.app/" target='_blank' className="w-[100%]">
+            <div className="flex text-white">
+              <img src={coffeeshop} alt="" className="rounded-l-xl w-[40%]" />
+              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">Coffee Shop</p>
+                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+              </div>
             </div>
-          </div>
+          </a>
+          
+          <a href="https://project14-t1-weather-app-react.vercel.app/" target='_blank' className="w-[100%]">
+            <div className="flex text-white">
+              <img src={weatherapp} alt="" className="rounded-l-xl w-[40%]" />
+              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">City Weather</p>
+                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">User can input a city and the app displays the weather via an external API</p>
+              </div>
+            </div>
+          </a>
 
-          <div className="flex">
-            <img src={weatherapp} className="w-[40%] rounded-l-xl"/>
-            <div className="bg-red-200 rounded-r-xl">
-              <p>city weather check app-notyet</p>
-              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+          <a href="https://project12-t1-recipe-app-react.vercel.app/" target='_blank' className="w-[100%]">
+            <div className="flex text-white">
+              <img src={recipeapp} alt="" className="rounded-l-xl w-[40%]" />
+              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">Recipe App</p>
+                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">Type in a food name and the dynamic search will fetch recipes from an external API</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex">
-            <img src={recipeapp} className="w-[40%] rounded-l-xl"/>
-            <div className="bg-red-200 rounded-r-xl">
-              <p>recipe app-notyet</p>
-              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+          </a>
+          
+          <a href="https://solah-calculator.vercel.app/" target='_blank' className="w-[100%]">
+            <div className="flex text-white">
+              <img src={calculatorapp} alt="" className="rounded-l-xl w-[40%]" />
+              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">iCalculator</p>
+                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">Recreating an iPhone calculator using React useState hook functionality</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex">
-            <img src={calculatorapp} className="w-[40%] rounded-l-xl"/>
-            <div className="bg-red-200 rounded-r-xl">
-              <p>calculator-deployed</p>
-              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+          </a>
+          
+          <a href="https://solah-todoapp.vercel.app/" target='_blank' className="w-[100%]">
+            <div className="flex text-white">
+              <img src={todoapp} alt="" className="rounded-l-xl w-[40%]" />
+              <div className="bg-slate-700/80 shadow-2xl rounded-r-xl px-4 py-2 flex flex-col">
+                <p className="text-[1.5rem] font-mono font-bold underline underline-offset-8">To-Do List</p>
+                <p className="text-[0.7rem] font-mono self-center text-justified py-[10%]">A personal to-do list app to replace note taking apps for daily reminder tasks</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex">
-            <img src={todoapp} className="w-[40%] rounded-l-xl"/>
-            <div className="bg-red-200 rounded-r-xl">
-              <p>todo-list app-deployed</p>
-              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
-            </div>
-          </div>
+          </a>
 
         </div>
 
       </div>
-
+      
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-slate-700">
-        <p>Contact Section</p>
+
+        <div className="flex justify-center">
+          <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
+        </div>
+
       </div>
 
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800">
-        <p>Footer Section</p>
+       
+        <div className="flex justify-center">
+          <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">FOOTER</p>
+        </div>
+
         <p>Copyright © 2023. All rights are reserved</p>
       </div>
 
