@@ -2,6 +2,11 @@ import "./App.css";
 import BlobAnimation from "./components/BlobAnimation";
 import { SiGithub, SiLinkedin, SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiStackoverflow } from "react-icons/si";
 import macbookpic from "./assets/macbookpic.jpg";
+import coffeeshop from "./assets/coffeeshop.jpg";
+import weatherapp from "./assets/weatherapp.jpeg";
+import recipeapp from "./assets/recipeapp.jpeg";
+import calculatorapp from "./assets/calculatorapp.jpeg";
+import todoapp from "./assets/todoapp.jpeg";
 
 function App() {
   return (
@@ -79,12 +84,55 @@ function App() {
       </div>
 
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800">
-        <p>Project Section</p>
-        <p>coffee shop</p>
-        <p>weather check app</p>
-        <p>recipe app</p>
-        <p>calculator</p>
-        <p>todolist app</p>
+
+        <div className="flex justify-center">
+              <p className="lg:mt-0 mt-[2rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">PROJECTS</p>
+        </div>
+        
+        <div className="grid grid-cols-1 gap-4">
+
+          <div className="flex">
+            <img src={coffeeshop} className="w-[40%] rounded-l-xl"/>
+            <div className="bg-red-200 rounded-r-xl">
+              <p>coffee shop-Deployed</p>
+              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+            </div>
+          </div>
+
+          <div className="flex">
+            <img src={weatherapp} className="w-[40%] rounded-l-xl"/>
+            <div className="bg-red-200 rounded-r-xl">
+              <p>city weather check app-notyet</p>
+              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+            </div>
+          </div>
+
+          <div className="flex">
+            <img src={recipeapp} className="w-[40%] rounded-l-xl"/>
+            <div className="bg-red-200 rounded-r-xl">
+              <p>recipe app-notyet</p>
+              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+            </div>
+          </div>
+
+          <div className="flex">
+            <img src={calculatorapp} className="w-[40%] rounded-l-xl"/>
+            <div className="bg-red-200 rounded-r-xl">
+              <p>calculator-deployed</p>
+              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+            </div>
+          </div>
+
+          <div className="flex">
+            <img src={todoapp} className="w-[40%] rounded-l-xl"/>
+            <div className="bg-red-200 rounded-r-xl">
+              <p>todo-list app-deployed</p>
+              <p>A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-slate-700">
