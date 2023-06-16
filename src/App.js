@@ -13,6 +13,8 @@ import React, { useRef } from 'react';
 import { MapIcon, InboxIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import contactpic from "./assets/contactpic.jpg";
 
+import { motion } from "framer-motion";
+
 
 function App() {
 
@@ -53,65 +55,85 @@ function App() {
   return (
     <div className="bg-gray-800 min-h-[100vh]">
 
-        {/* Header Top Menu */}
-      <div ref={homeRef} className="flex justify-center py-7 px-10 lg:px-20 bg-gray-800 drop-shadow-xl">
-        <RightMenu scrollToSection={scrollToSection}/>
-      </div>
-
-        {/* INTRO SECTION */}
-      <div className="px-[2rem]">
-
-        <div className="m-4 flex flex-col lg:flex-row">
-            {/* Blob Picture */}
-          <div className="lg:w-[40%] lg:h-[40%] lg:ml-[10%] mx-[2.2rem] lg:mx-0">
-            <BlobAnimation className="bg-red-700 lg:w-[5rem] lg:h-[5rem]"/>
-          </div>
-            {/* Title and Intro */}
-          <div className="lg:ml-10 flex flex-col justify-center text-white font-mono">
-            <p className="text-[2.2rem] lg:text-[3.6rem] lg:text-left text-center font-bold">Front-End <a href="#" class="text-sky-300 pointer-events-none">React</a> Developer 👋🏻</p>
-            <p className="text-[0.9rem] lg:mr-[23%] lg:text-left text-justify pt-8 pb-10">Hi, I'm Sol. A passionate self-taught Front-end React Developer based in Kuala Lumpur, Malaysia. 📍</p>
-            <div className="flex gap-x-4 justify-center lg:justify-start">
-              <a target="_blank" rel="noreferrer" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-yellow-400"/></a>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-blue-500"/></a>
-            </div>
-          </div>  
+          {/* Header Top Menu */}
+        <div ref={homeRef} className="flex justify-center py-7 px-10 lg:px-20 bg-gray-800 drop-shadow-xl">
+          <RightMenu scrollToSection={scrollToSection}/>
         </div>
 
-          {/* Tech Stack Title + Icons */}
-        <div className="flex flex-col lg:flex-row justify-center">
+          {/* INTRO SECTION */}
+        <div className="px-[2rem]">
 
-            {/* Tech Stack Title */}
-          <div className="flex justify-center lg:self-center text-white pt-8 lg:pt-0">
-            <div className="flex border-b-[0.15rem] lg:border-b-0 lg:border-r-[0.15rem] border-white pb-2 lg:pb-0 lg:pr-4">
-              <p className="font-mono text-[0.9rem]">Tech Stack </p>
-              <SiStackoverflow className="w-[1rem] h-[1rem] ml-[0.5rem]"/>
+          <div className="m-4 flex flex-col lg:flex-row">
+              {/* Blob Picture */}
+            <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+            <div className="lg:w-[40%] lg:h-[40%] lg:ml-[10%] mx-[2.2rem] lg:mx-0">
+              <BlobAnimation className="bg-red-700 lg:w-[5rem] lg:h-[5rem]"/>
             </div>
+            </motion.div>
+              {/* Title and Intro */}
+            <div className="lg:ml-10 flex flex-col justify-center text-white font-mono">
+              <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+              <p className="text-[2.2rem] lg:text-[3.6rem] lg:text-left text-center font-bold">Front-End <a href="#" class="text-sky-300 pointer-events-none">React</a> Developer 👋🏻</p>
+              </motion.div>
+              <p className="text-[0.9rem] lg:mr-[23%] lg:text-left text-justify pt-8 pb-10">Hi, I'm Sol. A passionate self-taught Front-end React Developer based in Kuala Lumpur, Malaysia. 📍</p>
+              <div className="flex gap-x-4 justify-center lg:justify-start">
+                <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><a target="_blank" rel="noreferrer" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-yellow-400"/></a></motion.button>
+                <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse hover:text-blue-500"/></a></motion.button>
+              </div>
+            </div>  
           </div>
 
-            {/* Icons */}
-          <div className="flex justify-center gap-[1.5rem] lg:gap-x-[2rem] lg:ml-[4rem] my-[4.5rem] text-white">
-            <SiHtml5 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-orange-700 to-orange-500 drop-shadow-md"/>
-            <SiCss3 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-500 drop-shadow-md"/>
-            <SiJavascript className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-yellow-500 to-yellow-300 drop-shadow-md"/>
-            <SiReact className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-cyan-700 to-cyan-500 drop-shadow-md"/>
-            <SiTailwindcss className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-sky-500 to-sky-300 drop-shadow-md"/>
-          </div>
+            {/* Tech Stack Title + Icons */}
+          <div className="flex flex-col lg:flex-row justify-center">
 
+              {/* Tech Stack Title */}
+            <div className="flex justify-center lg:self-center text-white pt-8 lg:pt-0">
+              <div className="flex border-b-[0.15rem] lg:border-b-0 lg:border-r-[0.15rem] border-white pb-2 lg:pb-0 lg:pr-4">
+                <p className="font-mono text-[0.9rem]">Tech Stack </p>
+                <SiStackoverflow className="w-[1rem] h-[1rem] ml-[0.5rem]"/>
+              </div>
+            </div>
+      
+
+              {/* Icons */}
+            <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+            <div className="flex justify-center gap-[1.5rem] lg:gap-x-[2rem] lg:ml-[4rem] my-[4.5rem] text-white">
+              <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><SiHtml5 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-orange-700 to-orange-500 drop-shadow-md"/></motion.button>
+              <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><SiCss3 className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-500 drop-shadow-md"/></motion.button>
+              <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><SiJavascript className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-yellow-500 to-yellow-300 drop-shadow-md"/></motion.button>
+              <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><SiReact className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-cyan-700 to-cyan-500 drop-shadow-md"/></motion.button>
+              <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><SiTailwindcss className="w-[3rem] h-[3rem] lg:w-[5rem] lg:h-[5rem] bg-gray-900 p-3.5 lg:p-4 rounded-2xl bg-gradient-to-r from-sky-500 to-sky-300 drop-shadow-md"/></motion.button>
+            </div>
+            </motion.div>
+
+           </div>  
         </div>
-
-      </div>
 
         {/* ABOUT ME SECTION */}
       <div ref={aboutMeRef} className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700 drop-shadow-xl">
+        
         <div className="flex flex-col lg:flex-row-reverse">
             {/* Macbook Pic lg:mt-[8rem] */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
             <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5rem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
+            </motion.div>
           <div className="lg:py-[2.5rem]">
               {/* Title */}
             <div className="flex justify-center">
               <p className="lg:mt-0 mt-[2.5rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">ABOUT ME</p>
             </div>
               {/* Employment History */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
             <div className="lg:px-[4rem] bg-slate-800/20 mx-[1rem] px-[1.5rem] py-[1rem] mt-[2rem] rounded-xl overflow-y-auto h-[30rem] lg:h-[100%]">
               <p className="text-left font-mono font-bold text-[1.5rem] text-white">An ex-<a href="#" class="text-yellow-200 pointer-events-none">Google</a> & <a href="#" class="text-sky-500 pointer-events-none">Facebook</a> Employee finally becomes a Programmer</p>
               <p className="text-justify mt-[2rem] font-mono text-[0.8rem] text-gray-100/80 ">As a self-taught Junior Front-End Developer, I now have an arsenal of skills in HTML, CSS, JavaScript, React, Tailwind and still coding & learning daily. I aim to create a meaningful app to ease everyone's lives.</p>
@@ -119,6 +141,7 @@ function App() {
               <p className="text-justify mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Other than those places, I've worked at <a href="#" class="text-green-500 pointer-events-none">ATOS as a L1 Tech Support</a> supporting the Asia Region. And my interest in coding started during my stay at a local startup called <a href="#" class="text-rose-500 pointer-events-none">WinApp in iOS Development</a> using Swift and XCode.</p>
               <p className="text-justify mt-[1rem] font-mono text-[0.8rem] text-gray-100/80">Although graduating with a <a href="#" class="text-lime-200 pointer-events-none">Mechanical Engineering Degree</a> from Wichita State in Kansas USA, I do believe programming is my passion because my love of building. With that being said, please give me a chance to perform and contribute in your company. I truly believe I can make a difference and give a positive impact.</p>
             </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -131,7 +154,7 @@ function App() {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1.5rem]">
-
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
           <a href="https://coffeeandkicks.vercel.app/" target='_blank' className="w-[100%]">
             <div className="flex">
               <img src={coffeeshop} alt="" className="rounded-l-xl w-[40%]" />
@@ -141,7 +164,8 @@ function App() {
               </div>
             </div>
           </a>
-          
+          </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
           <a href="https://project14-t1-weather-app-react.vercel.app/" target='_blank' className="w-[100%]">
             <div className="flex">
               <img src={weatherapp} alt="" className="rounded-l-xl w-[40%]" />
@@ -151,7 +175,8 @@ function App() {
               </div>
             </div>
           </a>
-
+          </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
           <a href="https://project12-t1-recipe-app-react.vercel.app/" target='_blank' className="w-[100%]">
             <div className="flex">
               <img src={recipeapp} alt="" className="rounded-l-xl w-[40%]" />
@@ -161,7 +186,8 @@ function App() {
               </div>
             </div>
           </a>
-          
+          </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
           <a href="https://solah-calculator.vercel.app/" target='_blank' className="w-[100%]">
             <div className="flex">
               <img src={calculatorapp} alt="" className="rounded-l-xl w-[40%]" />
@@ -171,7 +197,8 @@ function App() {
               </div>
             </div>
           </a>
-          
+          </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
           <a href="https://solah-todoapp.vercel.app/" target='_blank' className="w-[100%]">
             <div className="flex">
               <img src={todoapp} alt="" className="rounded-l-xl w-[40%]" />
@@ -181,7 +208,8 @@ function App() {
               </div>
             </div>
           </a>
-
+          </motion.div>
+        
         </div>
 
       </div>
@@ -189,7 +217,9 @@ function App() {
          {/* CONTACT SECTION */}
       <div ref={contactRef} className="px-[4rem] py-[5rem] lg:px-[8rem] bg-slate-700 drop-shadow-xl lg:flex lg:flex-row">
 
-        <img src={contactpic} className="mx-[0rem] lg:mx-[1rem] lg:w-[40%] lg:h-[40%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
+        <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
+          <img src={contactpic} className="mx-[0rem] lg:mx-[1rem] lg:w-[40%] lg:h-[40%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
+        </motion.div>
 
         <div className="lg:flex lg:flex-col lg:ml-[4rem] lg:mr-[10rem]">
           <div className="flex justify-center">
@@ -199,7 +229,10 @@ function App() {
             <p className="bg-blue-200/30 py-[0.75rem] px-[3rem] lg:px-[10rem] rounded-3xl text-center text-white font-mono font-bold tracking-widest text-xs animate-pulse">Tap a Button 👇🏻</p>
           </div>
 
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
           <div className="grid grid-cols-2 lg:grid-cols-1 grid-flow-rows gap-y-8 gap-x-[5rem] pt-[3rem] pb-[2rem] place-content-center">
+            
+            <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} >
             <div>
               <button value="emailSection" onClick={() => contactSectionHandler("emailSection")}>
                 <div className="flex">
@@ -211,7 +244,9 @@ function App() {
                 </div>
               </button>
             </div>
+            </motion.button>
             
+            <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} >
             <div>
               <button value="phoneSection" onClick={() => contactSectionHandler("phoneSection")}>
                 <div className="flex">
@@ -223,7 +258,9 @@ function App() {
                 </div>
               </button>
             </div>
+            </motion.button>
 
+            
             <div className="flex col-span-2 lg:col-span-1 lg:justify-start justify-center">
               <MapIcon className="text-white bg-gradient-to-r from-amber-600 to-amber-400 rounded-full self-center p-[0.4rem] w-[30px] h-[30px] lg:p-[0.8rem] lg:w-[60px] lg:h-[60px]"/>
               <div className="flex flex-col">
@@ -232,7 +269,10 @@ function App() {
                 <p className="text-white font-mono text-[0.4rem] self-start mx-4 px-3 py-1 tracking-widest lg:text-[0.5rem]">Okay with relocating ✅ </p>
               </div>
             </div>
+            
+            
           </div>
+          </motion.div>
         </div>
 
       </div>
@@ -242,8 +282,8 @@ function App() {
         <div className="flex flex-col lg:flex-row lg:justify-between gap-y-[2rem]">
           <p className="text-white font-bold font-mono text-[0.7rem] text-center">Copyright © 2023. All rights are reserved</p>
           <div className="flex gap-x-4 justify-center">
-            <a target="_blank" rel="noreferrer" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse text-white hover:text-yellow-400"/></a>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] text-white animate-pulse hover:text-blue-500"/></a>
+            <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><a target="_blank" rel="noreferrer" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse text-white hover:text-yellow-400"/></a></motion.button>
+            <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} ><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] text-white animate-pulse hover:text-blue-500"/></a></motion.button>
           </div>
         </div>
       </div>
