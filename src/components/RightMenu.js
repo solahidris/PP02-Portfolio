@@ -12,16 +12,22 @@ import {
     CommandLineIcon,
   } from "@heroicons/react/24/outline";
 
-import React, { useState } from 'react';
+import React from 'react';
 
 const RightMenu = ( { scrollToSection } ) => {
 
-    const handleItemClick = (ref) => {
-        if (scrollToSection) {
-          scrollToSection(ref);
-        }
-      };    
-
+    const menuRouteHandler = (ref) => {
+      if (scrollToSection) {
+        scrollToSection(ref);
+      }
+    }; 
+    
+    const phoneMenuHandler = (href) => {
+      if (href === '#') {
+        window.open("tel:+60127710626");
+      }
+    }; 
+  
     const solutions = [
         {
           name: "Home",
@@ -50,7 +56,7 @@ const RightMenu = ( { scrollToSection } ) => {
       ];
       const callsToAction = [
         { name: "Email", href: `mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}` , icon: InboxIcon },
-        { name: "Phone", href: "+60127710626", icon: PhoneIcon },
+        { name: "Phone", href: '#', icon: PhoneIcon },
       ];
 
   return (
@@ -72,9 +78,9 @@ const RightMenu = ( { scrollToSection } ) => {
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
           <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <div className="p-4">
-            {/* <div className="p-4" onClick={handleItemClick}> */}
+            {/* <div className="p-4" onClick={menuRouteHandler}> */}
               {solutions.map((item) => (
-                <div onClick={() => handleItemClick(item.ref)} key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div onClick={() => menuRouteHandler(item.ref)} key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                   <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                   </div>
@@ -90,10 +96,11 @@ const RightMenu = ( { scrollToSection } ) => {
             </div>
             <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
               {callsToAction.map((item) => (
-                <a
+                <a 
                   key={item.name}
                   href={item.href}
                   className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                  onClick={() => phoneMenuHandler(item.href)}
                 >
                   <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                   {item.name}
