@@ -32,14 +32,6 @@ function App() {
     }
   };
 
-  // const contactSectionHandler = (event) => {
-  //   event.preventDefault();
-  //   if (event.target.value === 'phoneSection') {
-  //     window.location.href = `tel:+60127710626`;
-  //   } else if (event.target.value === 'emailSection') {
-  //     window.open(`mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}`);
-  //   }
-  // };
       const contactSectionHandler = (value) => {
         if (value === "phoneSection") {
           window.location.href = "tel:+60127710626";
@@ -113,7 +105,7 @@ function App() {
       <div ref={aboutMeRef} className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700 drop-shadow-xl">
         <div className="flex flex-col lg:flex-row-reverse">
             {/* Macbook Pic lg:mt-[8rem] */}
-            <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5grem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
+            <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5rem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
           <div className="lg:py-[2.5rem]">
               {/* Title */}
             <div className="flex justify-center">
@@ -144,8 +136,8 @@ function App() {
             <div className="flex">
               <img src={coffeeshop} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 lg:pt-4 lg:px-8 flex flex-col ">
-                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">Coffee Shop</p>
-                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">A local coffee shop with a reactive menu, navigation, reviews and social links</p>
+                <p className="text-[1.1rem] lg:text-[1.6rem] text-white font-bold underline underline-offset-8">Coffee Shop</p>
+                <p className="text-[0.5rem] lg:text-[0.8rem] text-gray-100/80 self-center text-justified py-[15%]">A local coffee shop with a reactive menu, navigation, reviews and social links</p>
               </div>
             </div>
           </a>
@@ -154,8 +146,8 @@ function App() {
             <div className="flex">
               <img src={weatherapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 lg:pt-4 lg:px-8 flex flex-col">
-                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">City Weather</p>
-                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[20%] lg:py-[15%]">User can input a city and the app displays the weather via an external API</p>
+                <p className="text-[1.1rem] lg:text-[1.6rem] text-white font-bold underline underline-offset-8">City Weather</p>
+                <p className="text-[0.5rem] lg:text-[0.8rem] text-gray-100/80 self-center text-justified py-[20%] lg:py-[15%]">User can input a city and the app displays the weather via an external API</p>
               </div>
             </div>
           </a>
@@ -164,8 +156,8 @@ function App() {
             <div className="flex">
               <img src={recipeapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 lg:pt-4 lg:px-8 flex flex-col">
-                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">Recipe App</p>
-                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">Type in a food & the dynamic searchbar fetches recipes from an external API</p>
+                <p className="text-[1.1rem] lg:text-[1.6rem] text-white font-bold underline underline-offset-8">Recipe App</p>
+                <p className="text-[0.5rem] lg:text-[0.8rem] text-gray-100/80 self-center text-justified py-[15%]">Type in a food & the dynamic searchbar fetches recipes from an external API</p>
               </div>
             </div>
           </a>
@@ -174,8 +166,8 @@ function App() {
             <div className="flex">
               <img src={calculatorapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 lg:pt-4 lg:px-8 flex flex-col">
-                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">iCalculator</p>
-                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">Recreating an iPhone calculator using React useState hook functionality</p>
+                <p className="text-[1.1rem] lg:text-[1.6rem] text-white font-bold underline underline-offset-8">iCalculator</p>
+                <p className="text-[0.5rem] lg:text-[0.8rem] text-gray-100/80 self-center text-justified py-[15%]">Recreating an iPhone calculator using React useState hook functionality</p>
               </div>
             </div>
           </a>
@@ -184,8 +176,8 @@ function App() {
             <div className="flex">
               <img src={todoapp} alt="" className="rounded-l-xl w-[40%]" />
               <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 lg:pt-4 lg:px-8 flex flex-col">
-                <p className="text-[1.1rem] lg:text-[2rem] text-white font-bold underline underline-offset-8">To-Do List</p>
-                <p className="text-[0.5rem] lg:text-[1rem] text-gray-100/80 self-center text-justified py-[15%]">A personal to-do list app to replace note taking apps for daily reminder tasks</p>
+                <p className="text-[1.1rem] lg:text-[1.6rem] text-white font-bold underline underline-offset-8">To-Do List</p>
+                <p className="text-[0.5rem] lg:text-[0.8rem] text-gray-100/80 self-center text-justified py-[15%]">A personal to-do list app to replace note taking apps for daily reminder tasks</p>
               </div>
             </div>
           </a>
@@ -195,48 +187,50 @@ function App() {
       </div>
       
          {/* CONTACT SECTION */}
-      <div ref={contactRef} className="px-[4rem] py-[5rem] lg:px-[8rem] bg-slate-700 drop-shadow-xl">
+      <div ref={contactRef} className="px-[4rem] py-[5rem] lg:px-[8rem] bg-slate-700 drop-shadow-xl lg:flex lg:flex-row">
 
-        <img src={contactpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5grem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
+        <img src={contactpic} className="mx-[0rem] lg:mx-[1rem] lg:w-[40%] lg:h-[40%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
 
-        <div className="flex justify-center">
-          <p className="lg:mt-0 mt-[3rem] mb-[3rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
-        </div>
-        <div className="flex justify-center">
-          <p className="bg-blue-200/30 py-[0.75rem] px-[3rem] rounded-3xl text-center text-white font-mono font-bold tracking-widest text-xs animate-pulse">Tap a Button 👇🏻</p>
-        </div>
-
-        <div className="grid grid-cols-2 grid-flow-rows gap-y-8 gap-x-[5rem] pt-[3rem] pb-[2rem] place-content-center">
-          <div>
-            <button value="emailSection" onClick={() => contactSectionHandler("emailSection")}>
-              <div className="flex">
-                <InboxIcon className="text-white bg-gradient-to-r from-sky-600 to-sky-400 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
-                <div className="flex flex-col">
-                  <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Email</p>
-                  <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">solah.eth@gmail.com</p>
-                </div>
-              </div>
-            </button>
+        <div className="lg:flex lg:flex-col lg:ml-[4rem] lg:mr-[10rem]">
+          <div className="flex justify-center">
+            <p className="lg:mt-0 mt-[3rem] mb-[3rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
           </div>
-          
-          <div>
-            <button value="phoneSection" onClick={() => contactSectionHandler("phoneSection")}>
-              <div className="flex">
-                <PhoneIcon className="text-white bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
-                <div className="flex flex-col">
-                  <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Phone</p>
-                  <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">+60127710626</p>
-                </div>
-              </div>
-            </button>
+          <div className="flex justify-center">
+            <p className="bg-blue-200/30 py-[0.75rem] px-[3rem] lg:px-[10rem] rounded-3xl text-center text-white font-mono font-bold tracking-widest text-xs animate-pulse">Tap a Button 👇🏻</p>
           </div>
 
-          <div className="flex col-span-2 justify-center">
-            <MapIcon className="text-white bg-gradient-to-r from-amber-600 to-amber-400 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
-            <div className="flex flex-col">
-              <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Location</p>
-              <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center ml-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
-              <p className="text-white font-mono text-[0.4rem] self-start mx-4 px-3 py-1 tracking-widest">Okay with relocating ✅ </p>
+          <div className="grid grid-cols-2 lg:grid-cols-1 grid-flow-rows gap-y-8 gap-x-[5rem] pt-[3rem] pb-[2rem] place-content-center">
+            <div>
+              <button value="emailSection" onClick={() => contactSectionHandler("emailSection")}>
+                <div className="flex">
+                  <InboxIcon className="text-white bg-gradient-to-r from-sky-600 to-sky-400 rounded-full self-center p-[0.4rem] w-[30px] h-[30px] lg:p-[0.8rem] lg:w-[60px] lg:h-[60px]"/>
+                  <div className="flex flex-col">
+                    <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 lg:text-[1.6rem] tracking-widest">Email</p>
+                    <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] lg:text-[0.7rem] self-center mx-4 px-3 py-1 tracking-widest">solah.eth@gmail.com</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            
+            <div>
+              <button value="phoneSection" onClick={() => contactSectionHandler("phoneSection")}>
+                <div className="flex">
+                  <PhoneIcon className="text-white bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full self-center p-[0.4rem] w-[30px] h-[30px] lg:p-[0.8rem] lg:w-[60px] lg:h-[60px]"/>
+                  <div className="flex flex-col">
+                    <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 lg:text-[1.6rem] tracking-widest">Phone</p>
+                    <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] lg:text-[0.7rem] self-center mx-4 px-3 py-1 tracking-widest">+60127710626</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <div className="flex col-span-2 lg:col-span-1 lg:justify-start justify-center">
+              <MapIcon className="text-white bg-gradient-to-r from-amber-600 to-amber-400 rounded-full self-center p-[0.4rem] w-[30px] h-[30px] lg:p-[0.8rem] lg:w-[60px] lg:h-[60px]"/>
+              <div className="flex flex-col">
+                <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 lg:text-[1.6rem] tracking-widest">Location</p>
+                <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center lg:text-[0.7rem] ml-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
+                <p className="text-white font-mono text-[0.4rem] self-start mx-4 px-3 py-1 tracking-widest lg:text-[0.5rem]">Okay with relocating ✅ </p>
+              </div>
             </div>
           </div>
         </div>
@@ -245,15 +239,16 @@ function App() {
         
         {/* FOOTER SECTION */}
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800 drop-shadow-xl">
-        <div className="flex flex-col gap-y-[2rem]">
-          <p className="text-white font-bold font-mono text-sm text-center">Copyright © 2023. All rights are reserved</p>
-          <div className="flex gap-x-4 justify-center lg:justify-start">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-y-[2rem]">
+          <p className="text-white font-bold font-mono text-[0.7rem] text-center">Copyright © 2023. All rights are reserved</p>
+          <div className="flex gap-x-4 justify-center">
             <a target="_blank" rel="noreferrer" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse text-white hover:text-yellow-400"/></a>
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] text-white animate-pulse hover:text-blue-500"/></a>
           </div>
         </div>
       </div>
-{/* 
+
+      {/* 
       <div className="py-[30rem] text-gray-800">
           <p>more space</p>
       </div> */}
