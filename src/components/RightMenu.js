@@ -15,9 +15,9 @@ import {
 
 const RightMenu = ( { scrollToSection } ) => {
 
-    const handleItemClick = () => {
+    const handleItemClick = (ref) => {
         if (scrollToSection) {
-          scrollToSection();
+          scrollToSection(ref);
         }
       };    
 
@@ -25,30 +25,30 @@ const RightMenu = ( { scrollToSection } ) => {
         {
           name: "Home",
           description: "Let's Start Here",
-          
+          ref: "homeDiv",
           icon: HomeIcon,
         },
         {
           name: "About Me",
           description: "A Brief Story to Understand Me as a Person",
-          href: "#",
+          ref: "aboutDiv",
           icon: IdentificationIcon,
         },
         {
           name: "Projects",
           description: "My Programming Journey",
-          href: "#",
+          ref: "projectsDiv",
           icon: CommandLineIcon,
         },
         {
           name: "Contact",
           description: "Let's Get Connected",
-          href: "#",
+          ref: "contactDiv",
           icon: ChatBubbleLeftRightIcon,
         }
       ];
       const callsToAction = [
-        { name: "Email", href: "#", icon: InboxIcon },
+        { name: "Email", href: `mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}` , icon: InboxIcon },
         { name: "Phone", href: "#", icon: PhoneIcon },
       ];
 
@@ -70,9 +70,10 @@ const RightMenu = ( { scrollToSection } ) => {
       >
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
           <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-            <div className="p-4" onClick={handleItemClick}>
+            <div className="p-4">
+            {/* <div className="p-4" onClick={handleItemClick}> */}
               {solutions.map((item) => (
-                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div onClick={() => handleItemClick(item.ref)} key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                   <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                   </div>

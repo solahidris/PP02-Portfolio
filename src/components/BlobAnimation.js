@@ -18,7 +18,7 @@ const BlobAnimation = () => {
           width="100%"
           height="100%"
           clipPath="url(#shape)"
-          // href={profilepic}
+          href={profilepic}
           preserveAspectRatio="none"
         ></image>{" "}
         <defs>

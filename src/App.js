@@ -14,10 +14,19 @@ import React, { useRef } from 'react';
 
 function App() {
 
+  const homeRef = useRef(null);
   const aboutMeRef = useRef(null);
-  const scrollToSection = () => {
-    if (aboutMeRef.current) {
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+  const scrollToSection = (ref) => {
+    if (ref === 'homeDiv' && aboutMeRef.current) {
+      homeRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (ref === 'aboutDiv' && projectsRef.current) {
       aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (ref === 'projectsDiv' && contactRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (ref === 'contactDiv' && contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -25,7 +34,7 @@ function App() {
     <div className="bg-gray-800 min-h-[100vh]">
 
         {/* Header Top Menu */}
-      <div className="flex justify-center py-7 px-10 lg:px-20 bg-gray-800 drop-shadow-xl">
+      <div ref={homeRef} className="flex justify-center py-7 px-10 lg:px-20 bg-gray-800 drop-shadow-xl">
         <RightMenu scrollToSection={scrollToSection}/>
       </div>
 
@@ -95,7 +104,7 @@ function App() {
       </div>
 
         {/* PROJECTS SECTION */}
-      <div className="px-[4rem] py-[3rem] lg:px-[8rem] lg:pb-[8rem] bg-gray-800">
+      <div ref={projectsRef} className="px-[4rem] py-[3rem] lg:px-[8rem] lg:pb-[8rem] bg-gray-800">
 
         <div className="flex justify-center">
               <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">PROJECTS</p>
@@ -157,7 +166,7 @@ function App() {
 
       </div>
       
-      <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-slate-700">
+      <div ref={contactRef} className="px-[4rem] py-[3rem] lg:px-[8rem] bg-slate-700">
 
         <div className="flex justify-center">
           <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
@@ -190,3 +199,4 @@ function App() {
 }
 
 export default App;
+
