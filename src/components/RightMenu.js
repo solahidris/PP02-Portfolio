@@ -22,12 +22,12 @@ const RightMenu = ( { scrollToSection } ) => {
       }
     }; 
     
-    const phoneMenuHandler = (href, event) => {
+    const phoneMenuHandler = (event, phoneNumber) => {
       event.preventDefault();
-      if (href === '#') {
-        window.open("tel:+60127710626");
+      if (phoneNumber) {
+        window.location.href = `tel:${phoneNumber}`;
       }
-    }; 
+    };
   
     const solutions = [
         {
@@ -101,7 +101,7 @@ const RightMenu = ( { scrollToSection } ) => {
                   key={item.name}
                   href={item.href}
                   className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
-                  onClick={(event) => phoneMenuHandler(event, item.href)}
+                  onClick={(event) => phoneMenuHandler(event, '+60127710626')}
                 >
                   <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                   {item.name}
