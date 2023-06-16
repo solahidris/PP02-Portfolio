@@ -199,21 +199,21 @@ function App() {
           <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
         </div>
         <div>
-          <p className="bg-blue-200/30 py-2 rounded-3xl text-center text-white font-mono font-bold tracking-widest uppercase text-2xl motion-safe:animate-bounce">Let's connect! 👇🏻</p>
+          <p className="bg-blue-200/30 py-2 px-4 rounded-3xl text-center text-white font-mono font-bold tracking-widest text-xs">I Dare You to Tap a Button 👇🏻</p>
         </div>
         <div className="flex py-8">
-          <MapIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[70px] h-[70px] self-center"/>
+          <MapIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[60px] h-[60px] self-center"/>
           <div className="flex flex-col">
             <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Location</p>
-            <p className="bg-blue-300/10 rounded text-white font-mono text-[0.7rem] self-center mx-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
-            <p className="text-white font-mono text-[0.5rem] self-start mx-4 px-3 py-1 tracking-widest">✅ Okay with relocation</p>
+            <p className="bg-blue-300/10 rounded text-white font-mono text-[0.7rem] self-center ml-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
+            <p className="text-white font-mono text-[0.5rem] self-start mx-4 px-3 py-1 tracking-widest">Okay with relocating ✅ </p>
           </div>
         </div>
 
         <div className="flex">
           <button value="emailSection" onClick={() => contactSectionHandler("emailSection")}>
             <div className="flex py-8">
-              <InboxIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[50px] h-[50px]"/>
+              <InboxIcon className="text-white bg-blue-200/70 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
               <div className="flex flex-col">
                 <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Email</p>
                 <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">solah.eth@gmail.com</p>
@@ -222,7 +222,7 @@ function App() {
           </button>
           <button value="phoneSection" onClick={() => contactSectionHandler("phoneSection")}>
             <div className="flex py-8">
-              <PhoneIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[50px] h-[50px]"/>
+              <PhoneIcon className="text-white bg-blue-200/70 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
               <div className="flex flex-col">
                 <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Phone</p>
                 <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">+60127710626</p>
