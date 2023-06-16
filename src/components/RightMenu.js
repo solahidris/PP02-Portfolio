@@ -12,6 +12,7 @@ import {
     CommandLineIcon,
   } from "@heroicons/react/24/outline";
 
+import React, { useState } from 'react';
 
 const RightMenu = ( { scrollToSection } ) => {
 
@@ -49,7 +50,7 @@ const RightMenu = ( { scrollToSection } ) => {
       ];
       const callsToAction = [
         { name: "Email", href: `mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}` , icon: InboxIcon },
-        { name: "Phone", href: "#", icon: PhoneIcon },
+        { name: "Phone", href: "+60127710626", icon: PhoneIcon },
       ];
 
   return (
