@@ -200,7 +200,7 @@ function App() {
         <img src={contactpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5grem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
 
         <div className="flex justify-center">
-          <p className="lg:mt-0 mt-[2rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
+          <p className="lg:mt-0 mt-[3rem] mb-[3rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
         </div>
         <div className="flex justify-center">
           <p className="bg-blue-200/30 py-[0.75rem] px-[3rem] rounded-3xl text-center text-white font-mono font-bold tracking-widest text-xs animate-pulse">Tap a Button 👇🏻</p>
@@ -245,25 +245,18 @@ function App() {
         
         {/* FOOTER SECTION */}
       <div className="px-[4rem] py-[3rem] lg:px-[8rem] bg-gray-800 drop-shadow-xl">
-       
-        <div className="flex justify-center">
-          <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">FOOTER</p>
+        <div className="flex flex-col gap-y-[2rem]">
+          <p className="text-white font-bold font-mono text-sm text-center">Copyright © 2023. All rights are reserved</p>
+          <div className="flex gap-x-4 justify-center lg:justify-start">
+            <a target="_blank" rel="noreferrer" href="https://github.com/solahidris"><SiGithub className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] animate-pulse text-white hover:text-yellow-400"/></a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/solahuddinidris/"><SiLinkedin className="w-[1.7rem] h-[1.7rem] lg:w-[2rem] lg:h-[2rem] text-white animate-pulse hover:text-blue-500"/></a>
+          </div>
         </div>
-
-
-
-        <p>Copyright © 2023. All rights are reserved</p>
       </div>
-
-
-
-      <div className="py-[30rem] text-gray-800 bg-red-300">
-        <RightMenu />
-      </div>
-
+{/* 
       <div className="py-[30rem] text-gray-800">
           <p>more space</p>
-      </div>
+      </div> */}
         
 
     </div>
