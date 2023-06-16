@@ -18,8 +18,7 @@ const BlobAnimation = () => {
           width="100%"
           height="100%"
           clipPath="url(#shape)"
-          // href="https://media.licdn.com/dms/image/C5603AQHA-mXKXdVRxg/profile-displayphoto-shrink_800_800/0/1604864465490?e=1692230400&v=beta&t=q2ba98HJ-wXFPTLhXepu7MQqldAJcMMgWTuetLEVSrA"
-          href={profilepic}
+          // href={profilepic}
           preserveAspectRatio="none"
         ></image>{" "}
         <defs>

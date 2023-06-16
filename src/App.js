@@ -8,14 +8,25 @@ import recipeapp from "./assets/recipeapp.jpeg";
 import calculatorapp from "./assets/calculatorapp.jpeg";
 import todoapp from "./assets/todoapp.jpeg";
 
+import RightMenu from "./components/RightMenu";
+import React, { useRef } from 'react';
+
+
 function App() {
+
+  const aboutMeRef = useRef(null);
+  const scrollToSection = () => {
+    if (aboutMeRef.current) {
+      aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="bg-gray-800 min-h-[100vh]">
 
         {/* Header Top Menu */}
-      <div className="flex justify-between items-center py-7 px-10 lg:px-20 bg-gray-800 drop-shadow-xl">
-        <p className="font-mono text-xs text-white">solah.dev</p>
-        <button><p className="font-mono text-lg text-white">Ξ</p></button>
+      <div className="flex justify-center py-7 px-10 lg:px-20 bg-gray-800 drop-shadow-xl">
+        <RightMenu scrollToSection={scrollToSection}/>
       </div>
 
         {/* INTRO SECTION */}
@@ -62,7 +73,7 @@ function App() {
       </div>
 
         {/* ABOUT ME SECTION */}
-      <div className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700">
+      <div ref={aboutMeRef} className="px-[2rem] py-[5rem] lg:px-[8rem] bg-slate-700">
         <div className="flex flex-col lg:flex-row-reverse">
             {/* Macbook Pic lg:mt-[8rem] */}
           <img src={macbookpic} className="mx-[0rem] lg:mx-[1rem] lg:mt-[-2.5grem] lg:w-[30%] lg:h-[30%] w-[90%] h:[90%] self-center rounded-2xl" alt="macpic" />
@@ -164,6 +175,10 @@ function App() {
       </div>
 
 
+
+      <div className="py-[30rem] text-gray-800 bg-red-300">
+        <RightMenu />
+      </div>
 
       <div className="py-[30rem] text-gray-800">
           <p>more space</p>
