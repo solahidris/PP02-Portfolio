@@ -22,11 +22,13 @@ const RightMenu = ( { scrollToSection } ) => {
       }
     }; 
     
-    const phoneMenuHandler = (event, phoneNumber) => {
+    const phoneMenuHandler = (event, ref) => {
       event.preventDefault();
-      if (phoneNumber) {
-        window.location.href = `tel:${phoneNumber}`;
-      }
+      if (ref === "phoneDiv") {
+        window.location.href = `tel:+60127710626`;
+      } else if (ref === "emailDiv") {
+        window.open(`mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}`);
+      };
     };
   
     const solutions = [
@@ -56,8 +58,8 @@ const RightMenu = ( { scrollToSection } ) => {
         }
       ];
       const callsToAction = [
-        { name: "Email", href: `mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}` , icon: InboxIcon },
-        { name: "Phone", href: '#', icon: PhoneIcon },
+        { name: "Email", ref: "emailDiv", icon: InboxIcon },
+        { name: "Phone", ref: "phoneDiv", icon: PhoneIcon },
       ];
 
   return (
@@ -101,7 +103,7 @@ const RightMenu = ( { scrollToSection } ) => {
                   key={item.name}
                   href={item.href}
                   className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
-                  onClick={(event) => phoneMenuHandler(event, '+60127710626')}
+                  onClick={(event) => phoneMenuHandler(event, item.ref)}
                 >
                   <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                   {item.name}
