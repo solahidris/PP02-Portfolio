@@ -65,7 +65,7 @@ const RightMenu = ( { scrollToSection } ) => {
   return (
     <Popover className="relative">
       <Popover.Button className="inline-flex items-center gap-x-1 text-xs font-mono leading-6 text-white">
-        <span>solah.dev</span>
+        <span>sol.dev</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
 
