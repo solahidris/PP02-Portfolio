@@ -10,6 +10,7 @@ import todoapp from "./assets/todoapp.jpeg";
 
 import RightMenu from "./components/RightMenu";
 import React, { useRef } from 'react';
+import { MapIcon, InboxIcon, PhoneIcon } from "@heroicons/react/20/solid";
 
 
 function App() {
@@ -29,6 +30,17 @@ function App() {
       contactRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const contactSectionHandler = (event) => {
+    event.preventDefault();
+    if (event.target.value === "phoneSection") {
+      window.location.href = `tel:+60127710626`;
+    } else if (event.target.value === "emailSection") {
+      window.open(`mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}`);
+    }
+    console.log('Button clicked!'); // Add this line to check if the function is being called
+  };
+  
 
   return (
     <div className="bg-gray-800 min-h-[100vh]">
@@ -171,6 +183,38 @@ function App() {
         <div className="flex justify-center">
           <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">CONTACT</p>
         </div>
+        <div>
+          <p className="bg-blue-200/30 py-2 rounded-3xl text-center text-white font-mono font-bold tracking-widest uppercase text-2xl motion-safe:animate-bounce">Let's connect! 👇🏻</p>
+        </div>
+        <div className="flex py-8">
+          <MapIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[70px] h-[70px] self-center"/>
+          <div className="flex flex-col">
+            <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Location</p>
+            <p className="bg-blue-300/10 rounded text-white font-mono text-[0.7rem] self-center mx-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
+            <p className="text-white font-mono text-[0.5rem] self-start mx-4 px-3 py-1 tracking-widest">✅ Okay with relocation</p>
+          </div>
+        </div>
+
+        <div className="flex">
+          <button value="emailSection" onClick={(event) => contactSectionHandler(event)}>
+            <div className="flex py-8">
+              <InboxIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[50px] h-[50px]"/>
+              <div className="flex flex-col">
+                <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Email</p>
+                <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">solah.eth@gmail.com</p>
+              </div>
+            </div>
+          </button>
+          <button value="phoneSection" onClick={(event) => contactSectionHandler(event)}>
+            <div className="flex py-8">
+              <PhoneIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[50px] h-[50px]"/>
+              <div className="flex flex-col">
+                <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Phone</p>
+                <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">+60127710626</p>
+              </div>
+            </div>
+          </button>
+        </div>
 
       </div>
 
@@ -179,6 +223,8 @@ function App() {
         <div className="flex justify-center">
           <p className="lg:mt-0 mt-[1rem] mb-[4rem] tracking-widest font-mono font-bold text-white bg-blue-200/30 px-[1.5rem] py-[0.25rem] rounded-md">FOOTER</p>
         </div>
+
+
 
         <p>Copyright © 2023. All rights are reserved</p>
       </div>
