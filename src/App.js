@@ -201,16 +201,8 @@ function App() {
         <div className="flex justify-center">
           <p className="bg-blue-200/30 py-[0.75rem] px-[3rem] rounded-3xl text-center text-white font-mono font-bold tracking-widest text-xs">Tap a Button 👇🏻</p>
         </div>
-        <div className="flex justify-center pt-8 pb-4">
-          <MapIcon className="text-white bg-blue-200/70 rounded-full p-[0.5rem] w-[50px] h-[50px] self-center"/>
-          <div className="flex flex-col">
-            <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Location</p>
-            <p className="bg-blue-300/10 rounded text-white font-mono text-[0.7rem] self-center ml-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
-            <p className="text-white font-mono text-[0.5rem] self-start mx-4 px-3 py-1 tracking-widest">Okay with relocating ✅ </p>
-          </div>
-        </div>
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center pt-8 ">
           <button value="emailSection" onClick={() => contactSectionHandler("emailSection")}>
             <div className="flex py-8">
               <InboxIcon className="text-white bg-blue-200/70 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
@@ -229,6 +221,50 @@ function App() {
               </div>
             </div>
           </button>
+        </div>
+
+        <div className="flex justify-start ml-3">
+          <MapIcon className="text-white bg-blue-200/70 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
+          <div className="flex flex-col">
+            <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Location</p>
+            <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center ml-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
+            <p className="text-white font-mono text-[0.4rem] self-start mx-4 px-3 py-1 tracking-widest">Okay with relocating ✅ </p>
+          </div>
+        </div> */}
+
+        <div className="grid grid-cols-2 grid-flow-rows gap-8 pt-[3rem] pb-[2rem] place-content-center">
+          <div>
+            <button value="emailSection" onClick={() => contactSectionHandler("emailSection")}>
+              <div className="flex">
+                <InboxIcon className="text-white bg-blue-200/70 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
+                <div className="flex flex-col">
+                  <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Email</p>
+                  <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">solah.eth@gmail.com</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          
+          <div>
+            <button value="phoneSection" onClick={() => contactSectionHandler("phoneSection")}>
+              <div className="flex">
+                <PhoneIcon className="text-white bg-blue-200/70 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
+                <div className="flex flex-col">
+                  <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Phone</p>
+                  <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center mx-4 px-3 py-1 tracking-widest">+60127710626</p>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div className="flex col-span-2 justify-center">
+            <MapIcon className="text-white bg-blue-200/70 rounded-full self-center p-[0.4rem] w-[30px] h-[30px]"/>
+            <div className="flex flex-col">
+              <p className="text-white font-mono font-bold self-start mx-4 px-3 py-1 tracking-widest">Location</p>
+              <p className="bg-blue-300/10 rounded text-white font-mono text-[0.5rem] self-center ml-4 px-3 py-1 tracking-widest">Kuala Lumpur, Malaysia 📍</p>
+              <p className="text-white font-mono text-[0.4rem] self-start mx-4 px-3 py-1 tracking-widest">Okay with relocating ✅ </p>
+            </div>
+          </div>
         </div>
 
       </div>
