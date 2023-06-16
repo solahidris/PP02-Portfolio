@@ -31,15 +31,30 @@ function App() {
     }
   };
 
-  const contactSectionHandler = (event) => {
-    event.preventDefault();
-    if (event.target.value === "phoneSection") {
-      window.location.href = `tel:+60127710626`;
-    } else if (event.target.value === "emailSection") {
-      window.open(`mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}`);
-    }
-    console.log('Button clicked!'); // Add this line to check if the function is being called
-  };
+  // const contactSectionHandler = (event) => {
+  //   event.preventDefault();
+  //   if (event.target.value === 'phoneSection') {
+  //     window.location.href = `tel:+60127710626`;
+  //   } else if (event.target.value === 'emailSection') {
+  //     window.open(`mailto:${'solah.eth@gmail.com'}?subject=${encodeURIComponent('Work Opportunity')}&body=${encodeURIComponent('Hello Sol, I saw your website and wanted to reach out.')}`);
+  //   }
+  // };
+      const contactSectionHandler = (value) => {
+        if (value === "phoneSection") {
+          window.location.href = "tel:+60127710626";
+        } else if (value === "emailSection") {
+          window.open(
+            `mailto:${encodeURIComponent(
+              "solah.eth@gmail.com"
+            )}?subject=${encodeURIComponent(
+              "Work Opportunity"
+            )}&body=${encodeURIComponent(
+              "Hello Sol, I saw your website and wanted to reach out."
+            )}`
+          );
+        }
+      };
+  
   
 
   return (
@@ -196,7 +211,7 @@ function App() {
         </div>
 
         <div className="flex">
-          <button value="emailSection" onClick={(event) => contactSectionHandler(event)}>
+          <button value="emailSection" onClick={() => contactSectionHandler("emailSection")}>
             <div className="flex py-8">
               <InboxIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[50px] h-[50px]"/>
               <div className="flex flex-col">
@@ -205,7 +220,7 @@ function App() {
               </div>
             </div>
           </button>
-          <button value="phoneSection" onClick={(event) => contactSectionHandler(event)}>
+          <button value="phoneSection" onClick={() => contactSectionHandler("phoneSection")}>
             <div className="flex py-8">
               <PhoneIcon className="text-white bg-blue-200/70 rounded-full p-[0.7rem] w-[50px] h-[50px]"/>
               <div className="flex flex-col">
