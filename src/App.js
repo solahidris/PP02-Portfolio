@@ -7,6 +7,7 @@ import weatherapp from "./assets/weatherapp.jpeg";
 import recipeapp from "./assets/recipeapp.jpeg";
 import calculatorapp from "./assets/calculatorapp.jpeg";
 import todoapp from "./assets/todoapp.jpeg";
+import quoteapp from "./assets/quoteapp.png";
 
 import RightMenu from "./components/RightMenu";
 import React, { useRef } from 'react';
@@ -182,6 +183,17 @@ function App() {
               <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 lg:pt-4 lg:px-8 flex flex-col">
                 <p className="text-[1.1rem] lg:text-[1.6rem] text-white font-bold underline underline-offset-8">Recipe App</p>
                 <p className="text-[0.5rem] lg:text-[0.8rem] text-gray-100/80 self-center text-justified py-[15%]">Type in a food & the dynamic searchbar fetches recipes from an external API</p>
+              </div>
+            </div>
+          </a>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
+          <a href="https://project16-t2-random-quote-generator.vercel.app/" target='_blank' className="w-[100%]">
+            <div className="flex">
+              <img src={quoteapp} alt="" className="rounded-l-xl w-[40%]" />
+              <div className="bg-slate-700/80 font-mono shadow-2xl rounded-r-xl px-4 py-2 lg:pt-4 lg:px-8 flex flex-col">
+                <p className="text-[1.1rem] lg:text-[1.6rem] text-white font-bold underline underline-offset-8">Quote App</p>
+                <p className="text-[0.5rem] lg:text-[0.8rem] text-gray-100/80 self-center text-justified py-[15%]">Random Quote App via external API fetched using Axios recipes from an external API</p>
               </div>
             </div>
           </a>
